@@ -1,9 +1,6 @@
 # Arrival Notification App Api
 
-[![CI][build-badge]][build-url]
-[![TypeScript][typescript-badge]][typescript-url]
-[![prettier][prettier-badge]][prettier-url]
-![Heisenberg](misc/heisenberg.png)
+- RESTful API boilerplate with Typescript, TypeORM, ExpressJs & Mocha.
 
 ## Requirements
 
