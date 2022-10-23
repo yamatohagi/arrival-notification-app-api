@@ -54,7 +54,7 @@ describe('Users', () => {
       const res = await request(app).get('/users').set('Authorization', adminUserToken);
       expect(res.status).to.equal(200);
       expect(res.body.message).to.equal('List of users.');
-      expect(res.body.data[3].email).to.eql('hank.schrader@test.com');
+      expect(res.body.data[3].email).to.eql('saul.goodman@test.com');
     });
 
     it('should report error of unauthorized user', async () => {
