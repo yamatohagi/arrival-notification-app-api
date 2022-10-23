@@ -1,6 +1,6 @@
 # Arrival Notification App Api
 
-- RESTful API boilerplate with Typescript, TypeORM, ExpressJs & Mocha.
+- RESTful API with Typescript, TypeORM, ExpressJs & Mocha.
 
 ## Requirements
 
