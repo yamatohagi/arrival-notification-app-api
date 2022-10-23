@@ -1,18 +1,17 @@
 # Arrival Notification App Api
 
-- RESTful API with Typescript, TypeORM, ExpressJs & Mocha.
+- Typescript with ExpressJs & Mocha, TypeORM,
 
 ## Requirements
 
-- [Node v16+](https://nodejs.org/)
-- [Docker](https://www.docker.com/)
+- Docker
+- Node v16+
 
 ## Running
 
-- clone the repo
-- `npm run docker:dev` 🚀
+- `npm run docker:dev` 
 
-Visit [localhost:4000](http://localhost:4000/)
+- `localhost:4000`
 
 ## Test
 
