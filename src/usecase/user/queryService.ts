@@ -3,10 +3,16 @@ import { getRepository } from 'typeorm';
 import { User } from 'orm/entities/users/User';
 import { CustomError } from 'utils/response/custom-error/CustomError';
 
-export const userListGet = () =>
-  getRepository(User).find({
-    select: ['id', 'username', 'name', 'email', 'role', 'language', 'created_at', 'updated_at'],
-  });
+export const userListGet = async () => {
+  try {
+    const users = getRepository(User).find({
+      select: ['id', 'username', 'name', 'email', 'role', 'language', 'created_at', 'updated_at'],
+    });
+    return users;
+  } catch (e) {
+    throw e.constructor && e.constructor.name === 'CustomError' ? e : new CustomError(400, 'Raw', 'Error', null, e);
+  }
+};
 
 export const userDetailGet = async (id: string) => {
   try {
